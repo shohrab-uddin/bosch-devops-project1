@@ -86,5 +86,7 @@ terraform plan -out solution.plan
 ```
 
 ### Output
-**Your words here**
+- a policy defintion and assignment should be created
+- a pakcer image for Ubuntu18.04LTS should be created
+- A virtual machine should be create from packer image
 

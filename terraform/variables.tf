@@ -1,6 +1,6 @@
 variable "prefix" {
   description = "The prefix which should be used for all resources in this example"
-  default = "shohrab"
+  default = "s-uddin"
 }
 
 variable "location" {
@@ -8,14 +8,24 @@ variable "location" {
   default     = "East US"
 }
 
-variable "username" {
+variable "azure_username" {
   description = "The azure user name from Udacity Cloud Lab"
+  default     = "odl_user_203688@udacityhol.onmicrosoft.com"
 }
 
-variable "password" {
+variable "azure_password" {
   description = "Password for Udacity Cloud Lab"
+  default     =  "djpp10ZGQ*0J"
 }
 
 variable "node_count" {
 	type = number
+	default = 2
 }
+
+variable "tag_name" {
+	type = map(string)
+	default = {
+		 ProjectName = "Assignment1"
+		 }
+}		 

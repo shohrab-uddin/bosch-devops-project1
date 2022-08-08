@@ -1,13 +1,10 @@
 {
-  "mode": "Indexed",
-  "policyRule": {
-    "if": {
-      "field": "tags[ProjectName]",
-      "exists": "false"
-    },
-    "then": {
-      "effect": "deny"
-    }
-  },
-  "parameters": {}
+"if": {
+  "field": "tags[ProjectName]",
+  "exists": "false"
+},
+"then": {
+  "effect": "deny"
+}
+ 
 }

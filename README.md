@@ -24,7 +24,7 @@ PolicyDefinition.json file contains a policy rule to deny creating all indexed r
 You can create the policy defintion with the following command
 
 ```
-az policy definition create --name [policy definition name] --display-name "Deny creating indexed resources without a tag" 
+az policy definition create --name [policy_definition_name] --display-name "Deny creating indexed resources without a tag" 
 --description "Deny creating any indexed resources that do not have a tag" --rules [/path/to/PolicyDefinition.json]
 ```
 
@@ -79,10 +79,16 @@ Run the following command to initialize terraform
 terraform init
 ```
 
-Run the following command to check and deploy your terraform infrastructure
+Run the following command to ceate an execution plan
 
 ```
 terraform plan -out solution.plan
+```
+
+Run the following command deploy your terraform infrastructure
+
+```
+terraform apply solution.plan
 ```
 
 ### Output

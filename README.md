@@ -25,11 +25,9 @@ You can create the policy defintion with the following command
 ```
 az policy definition create --name [policy_definition_name] --display-name "Deny creating indexed resources without a tag" 
 --description "Deny creating any indexed resources that do not have a tag" --rules [/path/to/PolicyDefinition.json]
-```
+``` 
 
-PolicyDefinition.json file contains a policy rule to deny creating all indexed resources that do not have a tag. 
-
-You can assing the policy defintion to a subsription with the following command
+You can assign the policy defintion to a subsription with the following command
 
 ```
 az policy assignment create --name '[policy definition name]-assignment' --display-name "Deny creating indexed resources without a tag" 
